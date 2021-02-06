@@ -4,7 +4,8 @@
   "description": "api for the answered questions",
   "main": "app/app.js",
   "scripts": {
-    "test": "nodemon app.js"
+    "test": "nodemon app.js",
+    "start": "node app/app.js"
   },
   "keywords": [
     "quiz",
