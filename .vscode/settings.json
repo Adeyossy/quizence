@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/d1ba402a-562b-4388-a5ae-8be39260375a/resourceGroups/LearnAzureDeyosse/providers/Microsoft.Web/sites/azuredeyosse",
+    "appService.deploySubpath": "."
+}

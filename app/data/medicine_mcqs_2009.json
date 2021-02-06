@@ -1,0 +1,1153 @@
+{
+    "year": 2009,
+    "type": "mcq",
+    "course": "Medicine",
+    "questions": [
+        {
+            "question": "The following are true concerning secondary hyperparathyroidism",
+            "options": [
+                {
+                    "option": "Serum Calcium is usually raised",
+                    "answer": false
+                },
+                {
+                    "option": "It may complicate abdominal tuberculosis",
+                    "answer": true
+                },
+                {
+                    "option": "Parathyroid hormone is high",
+                    "answer": true
+                },
+                {
+                    "option": "Serum phosphate is low or normal",
+                    "answer": true
+                },
+                {
+                    "option": "Alkaline phosphatase is usually low",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "The following are clinical presentations of prolactinomas in a female",
+            "options": [
+                {
+                    "option": "Majority have galactorrhoea",
+                    "answer": true
+                },
+                {
+                    "option": "Menorrhagea",
+                    "answer": false
+                },
+                {
+                    "option": "Infertility",
+                    "answer": true
+                },
+                {
+                    "option": "Visual field defect",
+                    "answer": true
+                },
+                {
+                    "option": "Reduced libido",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "The following is/are true concerning a 30 year old asymptomatic man whose fasting plasma glucose was 128mg/dl:",
+            "options": [
+                {
+                    "option": "He is diabetic.",
+                    "answer": true
+                },
+                {
+                    "option": "Diabetes is unlikely",
+                    "answer": false
+                },
+                {
+                    "option": "If he is diabetic, type 2 is unlikely",
+                    "answer": false
+                },
+                {
+                    "option": "He should commence anti-diabetic agents  immediately",
+                    "answer": false
+                },
+                {
+                    "option": "If serum C-peptide is nil, type 2 diabetes is likely",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "The following may help to distinguish hyperthyroidism from hypothyroidism in a 32 yr old lady",
+            "options": [
+                {
+                    "option": "Weight gain",
+                    "answer": true
+                },
+                {
+                    "option": "Anterior neck swelling",
+                    "answer": false
+                },
+                {
+                    "option": "Fatigue",
+                    "answer": false
+                },
+                {
+                    "option": "Intellectual impairment",
+                    "answer": true
+                },
+                {
+                    "option": "Amenorrhoea",
+                    "answer": true
+                }
+            ]
+        },
+        {
+            "question": "Possible cause(s) of grossly elevated ACTH include",
+            "options": [
+                {
+                    "option": "Addison’s disease",
+                    "answer": true
+                },
+                {
+                    "option": "Nelson’s syndrome",
+                    "answer": true
+                },
+                {
+                    "option": "Exogeous use of steroid cream",
+                    "answer": false
+                },
+                {
+                    "option": "Lung cancer",
+                    "answer": true
+                },
+                {
+                    "option": "Carcinoid tumours",
+                    "answer": true
+                }
+            ]
+        },
+        {
+            "question": "Which of the  following disorders does not  display koebner’s phenomenon",
+            "options": [
+                {
+                    "option": "Psoriasis",
+                    "answer": false
+                },
+                {
+                    "option": "Lichen  planus",
+                    "answer": false
+                },
+                {
+                    "option": "Vitiligo",
+                    "answer": false
+                },
+                {
+                    "option": "Plane warts",
+                    "answer": false
+                },
+                {
+                    "option": "Pityriasis rosea",
+                    "answer": true
+                }
+            ]
+        },
+        {
+            "question": "Which of the following statements about psoriasis is not true?",
+            "options": [
+                {
+                    "option": "It  is minimally pruritic",
+                    "answer": true
+                },
+                {
+                    "option": "Scalp psoriasis leads to significant alopecia",
+                    "answer": true
+                },
+                {
+                    "option": "Splinter haemorrhage may appear when the nail is involved",
+                    "answer": false
+                },
+                {
+                    "option": "Joint involvement may mimic  rheumatoid arthritis",
+                    "answer": false
+                },
+                {
+                    "option": "HLA CW6 has been associated with psoriasis",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "Which of the following drugs leads to alopecia",
+            "options": [
+                {
+                    "option": "Prednisolone",
+                    "answer": false
+                },
+                {
+                    "option": "Paracetamol",
+                    "answer": false
+                },
+                {
+                    "option": "Heparin",
+                    "answer": true
+                },
+                {
+                    "option": "Interferon",
+                    "answer": true
+                },
+                {
+                    "option": "Lugol’s iodine",
+                    "answer": true
+                }
+            ]
+        },
+        {
+            "question": "Which of the following does not cause pruritus",
+            "options": [
+                {
+                    "option": "Polycythemia rubra vera",
+                    "answer": false
+                },
+                {
+                    "option": "Hyperthyroidism",
+                    "answer": false
+                },
+                {
+                    "option": "Hypothyroidism",
+                    "answer": false
+                },
+                {
+                    "option": "Hodgkins lymphoma",
+                    "answer": false
+                },
+                {
+                    "option": "Leprosy",
+                    "answer": true
+                }
+            ]
+        },
+        {
+            "question": "The following statements about the patch test are true except",
+            "options": [
+                {
+                    "option": "It is a type IV hypersensitivity test",
+                    "answer": false
+                },
+                {
+                    "option": "The allergens are usually applied on the back",
+                    "answer": false
+                },
+                {
+                    "option": "The patient must be free of an eczematous rash",
+                    "answer": false
+                },
+                {
+                    "option": "The risk of anaphylaxis is high",
+                    "answer": true
+                },
+                {
+                    "option": "The test is usually read after 48 hours",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "The following are true concerning tremors",
+            "options": [
+                {
+                    "option": "Coarse unilateral tremor in Parkinson’s disease",
+                    "answer": false
+                },
+                {
+                    "option": "Titubation in cerebellar disease",
+                    "answer": true
+                },
+                {
+                    "option": "Pill-rolling action tremor in Parkinson’s disease",
+                    "answer": true
+                },
+                {
+                    "option": "Bilateral fine tremors in Benign essential tremor",
+                    "answer": true
+                },
+                {
+                    "option": "Alcohol typically worsens benign essential tremors",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "The following descriptions are true",
+            "options": [
+                {
+                    "option": "Right-sided Jacksonian march(sec. generalized tonic-clonic) indicates a left hemispheric lesion",
+                    "answer": true
+                },
+                {
+                    "option": "Complex partial seizure is characterised by abrupt loss of consciousness",
+                    "answer": false
+                },
+                {
+                    "option": "Complex partial seizure is characterised by automatisms, amnesia and impairment of consciousness",
+                    "answer": true
+                },
+                {
+                    "option": "Versive turning of the head to the right side suggests a right hemispheric lesion",
+                    "answer": false
+                },
+                {
+                    "option": "Seizures are due to hypersynchronus abnormal discharges of the lower motor neurone",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "Causes of secondary headache include",
+            "options": [
+                {
+                    "option": "Migraine with aura",
+                    "answer": false
+                },
+                {
+                    "option": "Pseudotumor cerebri",
+                    "answer": true
+                },
+                {
+                    "option": "Severe tension type headache",
+                    "answer": false
+                },
+                {
+                    "option": "Stroke",
+                    "answer": true
+                },
+                {
+                    "option": "Mastoiditis",
+                    "answer": true
+                }
+            ]
+        },
+        {
+            "question": "Risk factors for stroke include",
+            "options": [
+                {
+                    "option": "Hyperhomocysteinemia T(thromboembolic disorder)",
+                    "answer": false
+                },
+                {
+                    "option": "Sickle cell disease",
+                    "answer": true
+                },
+                {
+                    "option": "Hypotension",
+                    "answer": true
+                },
+                {
+                    "option": "Moderate alcohol consumption",
+                    "answer": false
+                },
+                {
+                    "option": "Metabolic syndrome",
+                    "answer": true
+                }
+            ]
+        },
+        {
+            "question": "In the acute management of stroke",
+            "options": [
+                {
+                    "option": "Blood pressure should be reduced rapidly",
+                    "answer": false
+                },
+                {
+                    "option": "5% Dextrose water is the iv fluid of choice",
+                    "answer": false
+                },
+                {
+                    "option": "Neuroimaging should be delayed until the second day",
+                    "answer": false
+                },
+                {
+                    "option": "Heparin is suitable for preventing deep venous thrombosis in all cases of stroke",
+                    "answer": false
+                },
+                {
+                    "option": "Intraventricular hemorrhage is not associated with meningeal signs",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "The following conditions may complicate Typhoid Fever",
+            "options": [
+                {
+                    "option": "Orchitis",
+                    "answer": true
+                },
+                {
+                    "option": "Pneumonia",
+                    "answer": true
+                },
+                {
+                    "option": "Osteomyelitis",
+                    "answer": true
+                },
+                {
+                    "option": "Arthritis",
+                    "answer": true
+                },
+                {
+                    "option": "Hepatitis",
+                    "answer": true
+                }
+            ]
+        },
+        {
+            "question": "Concerning shigellosis",
+            "options": [
+                {
+                    "option": "The incubation period is about 7 days",
+                    "answer": true
+                },
+                {
+                    "option": "‘Rice-water’ stool is characteristic",
+                    "answer": false
+                },
+                {
+                    "option": "Tenesmus is not a feature",
+                    "answer": false
+                },
+                {
+                    "option": "Anaemia may be present",
+                    "answer": true
+                },
+                {
+                    "option": "May be complicated by colonic toxic dilatation",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "The following can cause Acute Pancreatitis",
+            "options": [
+                {
+                    "option": "Gallstones",
+                    "answer": true
+                },
+                {
+                    "option": "Alcohol",
+                    "answer": true
+                },
+                {
+                    "option": "Hypercalcaemia",
+                    "answer": true
+                },
+                {
+                    "option": "Scorpion sting",
+                    "answer": true
+                },
+                {
+                    "option": "Hydrochlorothiazide",
+                    "answer": true
+                }
+            ]
+        },
+        {
+            "question": "The following are causes of acute diarrhoea",
+            "options": [
+                {
+                    "option": "Vibrio Cholerae",
+                    "answer": true
+                },
+                {
+                    "option": "Aluminium-containing antacids",
+                    "answer": false
+                },
+                {
+                    "option": "Chronic Pancreatitis",
+                    "answer": false
+                },
+                {
+                    "option": "Zollinger – Ellison Syndrome",
+                    "answer": false
+                },
+                {
+                    "option": "Faecal impaction",
+                    "answer": true
+                }
+            ]
+        },
+        {
+            "question": "The following agents can be used to treat peptic ulcer disease",
+            "options": [
+                {
+                    "option": "Pantoprazole",
+                    "answer": true
+                },
+                {
+                    "option": "Pirenzepine",
+                    "answer": true
+                },
+                {
+                    "option": "Sucralfate",
+                    "answer": true
+                },
+                {
+                    "option": "Colloidal Bismuth",
+                    "answer": true
+                },
+                {
+                    "option": "Aluminium Hydroxide",
+                    "answer": true
+                }
+            ]
+        },
+        {
+            "question": "The following statements are false about asthma",
+            "options": [
+                {
+                    "option": "Aetiology is mutifactorial",
+                    "answer": false
+                },
+                {
+                    "option": "It is an acute inflammatory airway disease",
+                    "answer": true
+                },
+                {
+                    "option": "Typical symptoms are wheeze, dyspnoea, cough and chest tightness",
+                    "answer": false
+                },
+                {
+                    "option": "It may be associated with nasal polyp",
+                    "answer": false
+                },
+                {
+                    "option": "Occupational asthma may be caused by colophony",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "Differential of recurrent wheezing include:",
+            "options": [
+                {
+                    "option": "Chronic rhino-sinusitis",
+                    "answer": true
+                },
+                {
+                    "option": "Gastroeosophageal reflux",
+                    "answer": true
+                },
+                {
+                    "option": "Tuberculosis",
+                    "answer": true
+                },
+                {
+                    "option": "Foreign body aspiration",
+                    "answer": true
+                },
+                {
+                    "option": "Primary ciliary dyskinesia",
+                    "answer": true
+                }
+            ]
+        },
+        {
+            "question": "In chronic pulmonary airway disease",
+            "options": [
+                {
+                    "option": "Disease is characterized by variable airflow obstruction",
+                    "answer": false
+                },
+                {
+                    "option": "All the cases are smoking related",
+                    "answer": false
+                },
+                {
+                    "option": "The inflammatory cells secrete TNF, IL8 and leukotrien B4 (LTB4)",
+                    "answer": true
+                },
+                {
+                    "option": "Minimal bronchodilator reversibility is greater than 20%.",
+                    "answer": false
+                },
+                {
+                    "option": "Periacinar  emphysema occur with dilated air spaces found in association with respiratory bronchioles",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "Tuberculosis",
+            "options": [
+                {
+                    "option": "Spread is by airborne transmission of droplet nuclei.",
+                    "answer": true
+                },
+                {
+                    "option": "Cases with cavities are more likely to be sputum smear negative",
+                    "answer": false
+                },
+                {
+                    "option": "Primary infection usually shows a lesion in the right lower lung zone.",
+                    "answer": false
+                },
+                {
+                    "option": "HIV infection is an insignificant risk factor.",
+                    "answer": false
+                },
+                {
+                    "option": "Miliary TB refers to widespread micro cavities in both lung fields.",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "Tuberculosis",
+            "options": [
+                {
+                    "option": "Sputum culture using bactec radiometric system will take a minimum of 4 weeks",
+                    "answer": false
+                },
+                {
+                    "option": "Mantoux reading of 14mm×12mm is diagnostic",
+                    "answer": false
+                },
+                {
+                    "option": "Moxifloxacin is a fluroquinolone useful in treatment of multidrug resistant TB",
+                    "answer": true
+                },
+                {
+                    "option": "d capreomycin, cycloserine and gentamycin  are all  2nd line antiTB drugs",
+                    "answer": false
+                },
+                {
+                    "option": "Pyrazinamide is associated with orange to pink colouration of urine, sweats and tears",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "In tuberculosis",
+            "options": [
+                {
+                    "option": "Tuberculous pleural effusion usually results from direct invasion of pleura by the acid-fast bacillus.",
+                    "answer": false
+                },
+                {
+                    "option": "In patients with co morbid HIV/Tb infection, response to therapy is usually poor",
+                    "answer": false
+                },
+                {
+                    "option": "Intestinal bypass surgery is  associated with the development of tuberculosis",
+                    "answer": false
+                },
+                {
+                    "option": "Elevation of uric acid levels with arthralgia occurs with use of rifampicin",
+                    "answer": false
+                },
+                {
+                    "option": "Exposure to Silica has been shown to potentiates the growth of Mycobacterial tuberculosis",
+                    "answer": true
+                }
+            ]
+        },
+        {
+            "question": "Concerning Interstitial lung diseases:",
+            "options": [
+                {
+                    "option": "Digital clubbing occurs in about 50%(10-25) of cases in Idiopathic pulmonary fibrosis",
+                    "answer": true
+                },
+                {
+                    "option": "In Sarcoidosis, peak age occurrence is in the 6th decade of life",
+                    "answer": false
+                },
+                {
+                    "option": "In hypersensitivity pneumonitis (extrinsic allergic alveolitis), sputum eosinophilia is often a common finding",
+                    "answer": false
+                },
+                {
+                    "option": "Predominantly lymphocytic bronchoalveolar lavage is typically seen in Sarcoidosis",
+                    "answer": true
+                },
+                {
+                    "option": "Lung airways are not known to be affected in Interstitial lung diseases",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "HIV and lung:",
+            "options": [
+                {
+                    "option": "Early HIV/TB infection present with hilar adenopathy",
+                    "answer": false
+                },
+                {
+                    "option": "In advanced HIV/TB co-infection cavitations are usually present on CXR",
+                    "answer": false
+                },
+                {
+                    "option": "Lymphocytic interstitial pneumonitis is common in adult HIV",
+                    "answer": false
+                },
+                {
+                    "option": "Pulmonary Kaposi sarcoma is diagnosed on bronchoscopy biopsy of the lesion",
+                    "answer": false
+                },
+                {
+                    "option": "Pneumocystic jiroveci often present with nodular opacities in CXR",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "Typical features of early onset bronchial asthma include",
+            "options": [
+                {
+                    "option": "Paroxysmal expiratory wheeze and dyspnoea",
+                    "answer": true
+                },
+                {
+                    "option": "Individuals are usually atopic",
+                    "answer": true
+                },
+                {
+                    "option": "Association with nasal polyps",
+                    "answer": false
+                },
+                {
+                    "option": "Aspergillus fumigatus is usually present in the sputum",
+                    "answer": false
+                },
+                {
+                    "option": "A single allergen can often be identified",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "In alpha1-antitrypsin deficiency:",
+            "options": [
+                {
+                    "option": "Chest x-ray shows basal hyperlucency",
+                    "answer": true
+                },
+                {
+                    "option": "Inheritance is autosomal dominant",
+                    "answer": true
+                },
+                {
+                    "option": "A single base change is the underlying defect",
+                    "answer": false
+                },
+                {
+                    "option": "Emphysema is of a panacinar type",
+                    "answer": false
+                },
+                {
+                    "option": "Is associated with bronchiectasis",
+                    "answer": true
+                }
+            ]
+        },
+        {
+            "question": "Concerning Diabetes Mellitus",
+            "options": [
+                {
+                    "option": "Type 1 diabetes occurs as a result of a combination of insulin resistance and impaired insulin secretion",
+                    "answer": false
+                },
+                {
+                    "option": "Obesity is a major modifiable risk factor for type 2 diabetes mellitus",
+                    "answer": true
+                },
+                {
+                    "option": "Antibodies to islet cell antigens are present in up to 85-90% of persons with type 1A diabetes mellitus at the time of initial diagnosis",
+                    "answer": true
+                },
+                {
+                    "option": "Insulin is a potent inhibitor of glycogenolysis, lipolysis \u0026 gluconeogenesis",
+                    "answer": false
+                },
+                {
+                    "option": "Insulin resistance results in increased glucose uptake by target tissues \u0026 decreased hepatic gluconeogenesis",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "Concerning the following:",
+            "options": [
+                {
+                    "option": "The responsibility for the treatment of persons with diabetes mellitus lies solely with the Physician",
+                    "answer": false
+                },
+                {
+                    "option": "An optimal target for treatment in persons with diabetes mellitus is a glycosylated hemoglobin level (HbA1c) level of less than 7%",
+                    "answer": true
+                },
+                {
+                    "option": "The diet for a person with diabetes should be centered around a eating plan which excludes carbohydrates",
+                    "answer": false
+                },
+                {
+                    "option": "Obese persons with type 2 diabetes are the only persons who require regular physical activity to aid glycemic control.",
+                    "answer": false
+                },
+                {
+                    "option": "Metformin therapy should be the first choice, if an oral glucose lowering agent becomes necessary in the treatment of an obese person with type 2 diabetes",
+                    "answer": true
+                }
+            ]
+        },
+        {
+            "question": "Concerning the following:",
+            "options": [
+                {
+                    "option": "Soluble insulin has a more rapid onset of action and gives better post prandial glucose control than insulin aspart or insulin Lispro",
+                    "answer": false
+                },
+                {
+                    "option": "Lipohypertrophy is a well recognized complication of insulin therapy",
+                    "answer": true
+                },
+                {
+                    "option": "Insulin therapy is rarely required in the management of persons with type 2 diabetes mellitus",
+                    "answer": false
+                },
+                {
+                    "option": "Lifestyle interventions have been proven to be extremely useful in the prevention oftype 2 diabetes",
+                    "answer": true
+                },
+                {
+                    "option": "Exenatide is a potent insulin releasing drug, licensed for use in persons with type 1diabetes mellitus",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "Concerning the following:",
+            "options": [
+                {
+                    "option": "Ketoacidosis is a common presenting feature of type 2 diabetes mellitus",
+                    "answer": false
+                },
+                {
+                    "option": "An overnight fasting plasma glucose concentration of 110 mg/dl (6.1 mmol/l) on two separate occasions is diagnostic of diabetes mellitus",
+                    "answer": false
+                },
+                {
+                    "option": "Type 2 diabetes mellitus does not occur in persons below the age of 40 years",
+                    "answer": false
+                },
+                {
+                    "option": "Type 2 diabetes may be asymptomatic and consequently be undiagnosed for years",
+                    "answer": true
+                },
+                {
+                    "option": "Low birth weight infants are at an increased risk for developing type 2 diabetes",
+                    "answer": true
+                }
+            ]
+        },
+        {
+            "question": "Concerning the following:",
+            "options": [
+                {
+                    "option": "The presence of leucocytosis in a patient with DKA confirms the presence of  infectionT",
+                    "answer": false
+                },
+                {
+                    "option": "Diabetic ketoacidosis (DKA) does not occur in persons with Type 2 diabetes",
+                    "answer": false
+                },
+                {
+                    "option": "The initial fluid of choice in the rehydration of patients with DKA is isotonic saline (0.9% NaCl)",
+                    "answer": true
+                },
+                {
+                    "option": "NPH insulin is a good choice for the management of patients presenting with acute metabolic complications of diabetes mellitus",
+                    "answer": false
+                },
+                {
+                    "option": "Heavy alcohol ingestion increases the risk of developing severe hypoglycemia in a person with diabetes mellitus",
+                    "answer": true
+                }
+            ]
+        },
+        {
+            "question": "Concerning Polycystic Kidney disease",
+            "options": [
+                {
+                    "option": "Inheritance is genetically determined only in the infantile type.",
+                    "answer": false
+                },
+                {
+                    "option": "Females are particularly more affected than males in the adult type.",
+                    "answer": false
+                },
+                {
+                    "option": "Due to the presence of numerous cysts, renal function usually deteriorates fast.",
+                    "answer": false
+                },
+                {
+                    "option": "Hypertension is an uncommon feature.",
+                    "answer": false
+                },
+                {
+                    "option": "Ultrasound screening of family members is an important part of the management.",
+                    "answer": true
+                }
+            ]
+        },
+        {
+            "question": "The following conditions lead to obstructive uropathy by causing retroperitoneal fibrosis:",
+            "options": [
+                {
+                    "option": "Prolonged tetracycline therapy",
+                    "answer": false
+                },
+                {
+                    "option": "TB of the spine",
+                    "answer": false
+                },
+                {
+                    "option": "Sickle cell disease",
+                    "answer": false
+                },
+                {
+                    "option": "Radiation therapy",
+                    "answer": false
+                },
+                {
+                    "option": "Repeated renal biopsies.",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "In the RIFLE Classification, Acute Renal failure is defined as:",
+            "options": [
+                {
+                    "option": "Reduction in urine output to less than 50mls/min",
+                    "answer": false
+                },
+                {
+                    "option": "Reduction of GFR to less than 50mls/min.",
+                    "answer": false
+                },
+                {
+                    "option": "Sudden reduction in corticomedullary ratio to less than 1/3 of that in health.",
+                    "answer": false
+                },
+                {
+                    "option": "Elevation of blood urea nitrogen accompanied by vomiting and flapping tremor",
+                    "answer": false
+                },
+                {
+                    "option": "Reduction in urine output to less than 0.3mls/kg /hr for 24 hours.",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "The following are notable features of Alports’ Syndrome",
+            "options": [
+                {
+                    "option": "Proteinuria with microscopic hematuria",
+                    "answer": true
+                },
+                {
+                    "option": "Sensorineural deafness",
+                    "answer": true
+                },
+                {
+                    "option": "Progressive glomerular disease",
+                    "answer": true
+                },
+                {
+                    "option": "Frequent subclinical episodes of pulmonary embolism",
+                    "answer": true
+                },
+                {
+                    "option": "Large palpable kidneys.",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "The following are true in End Stage Renal failure:",
+            "options": [
+                {
+                    "option": "A renal biopsy is vital in making the diagnosis",
+                    "answer": false
+                },
+                {
+                    "option": "Renal transplantation is not recommended for diabetic patients",
+                    "answer": false
+                },
+                {
+                    "option": "Diabetes Mellitus could develop for the first time after renal transplantation.",
+                    "answer": false
+                },
+                {
+                    "option": "Anaemia treatment is unnecessary in the minority of patients on regular 3 times a week dialysis.",
+                    "answer": false
+                },
+                {
+                    "option": "Peritoneal dialysis allows a more liberal dietary prescription than hemodialysis.",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "The following are classical of trypanosomiasis:",
+            "options": [
+                {
+                    "option": "The disease is conveyed by bites of infected female tsetse flies only",
+                    "answer": false
+                },
+                {
+                    "option": "The Gambiense infection runs an abrupt course terminating in death within months, whereas the Rhodesiense infection is more insidious F (swapped)",
+                    "answer": false
+                },
+                {
+                    "option": "Painless cervical lympladenopathy and fever are commonly features",
+                    "answer": false
+                },
+                {
+                    "option": "A lumbar puncture is useful in diagnosis",
+                    "answer": true
+                },
+                {
+                    "option": "Treatment with Pentamidine is beneficial when there is evidence in CNS infection.F(Ornithine)",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "Concerning Amoebicdysentery:",
+            "options": [
+                {
+                    "option": "The aetiologic agent is Entamoeba histrolytical which is a unicellular parasite. T",
+                    "answer": false
+                },
+                {
+                    "option": "Clinical manifestations are usually restricted to the abdomen.F(Skin – genital ulcer)",
+                    "answer": false
+                },
+                {
+                    "option": "The finding of the encysted organism in a stool specimen always indicates a carrier state.",
+                    "answer": false
+                },
+                {
+                    "option": "Diagnostic tools include antibody immunoflourescence tests.",
+                    "answer": true
+                },
+                {
+                    "option": "Treatment of choice is use of oral metronidozole",
+                    "answer": true
+                }
+            ]
+        },
+        {
+            "question": "In Cholera infection:",
+            "options": [
+                {
+                    "option": "The organism secretes a powerful exotoxin which is responsible for massive loss of intestinal fluid",
+                    "answer": true
+                },
+                {
+                    "option": "Acute renal failure does not constitute a factor for poor outcome of treatment",
+                    "answer": false
+                },
+                {
+                    "option": "The diagnosis is made only bacteriologically.",
+                    "answer": false
+                },
+                {
+                    "option": "Treatment is primarily by use of antiemetic and antidiarrhoeal drugs",
+                    "answer": false
+                },
+                {
+                    "option": "There is no need for notification.",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "In Severe Malaria Infection:",
+            "options": [
+                {
+                    "option": "Severe anaemia is usually due to drug reactions.",
+                    "answer": false
+                },
+                {
+                    "option": "Renal failure is due to Malarial Nephropathy.",
+                    "answer": true
+                },
+                {
+                    "option": "A thick blood film is useful in determining the developmental stage of the parasite.",
+                    "answer": false
+                },
+                {
+                    "option": "Immunochromatographic dipsticks tests for malaria are available therefore blood film examinations are unnecessary",
+                    "answer": false
+                },
+                {
+                    "option": "Due to drug resistance, Quinine remains a first drug of choice in its treatment.",
+                    "answer": false
+                }
+            ]
+        },
+        {
+            "question": "In typhoid fever:",
+            "options": [
+                {
+                    "option": "The fever is usually intermittent and prolonged",
+                    "answer": false
+                },
+                {
+                    "option": "A blood culture in the 4th week of infection is usually more superior to that of stool or urine.",
+                    "answer": false
+                },
+                {
+                    "option": "The presence of a leukocytosis usually rules out the diagnosis",
+                    "answer": true
+                },
+                {
+                    "option": "In the carrier state a cholecystectomy",
+                    "answer": true
+                }
+            ]
+        },
+        {
+            "question": "Concerning the following:",
+            "options": [
+                {
+                    "option": "The presence of leucocytosis in a patient with DKA confirms the presence of infection",
+                    "answer": false
+                },
+                {
+                    "option": "Diabetic ketoacidosis (DKA) does not occur in persons with Type 2 diabetes",
+                    "answer": false
+                },
+                {
+                    "option": "The initial fluid of choice in the rehydration of patients with DKA is isotonic saline (0.9% NaCl)",
+                    "answer": false
+                },
+                {
+                    "option": "NPH insulin is a good choice for the management of patients presenting with acute metabolic complications of diabetes mellitus",
+                    "answer": false
+                },
+                {
+                    "option": "Heavy alcohol ingestion increases the risk of developing severe hypoglycemia in a person with diabetes mellitus",
+                    "answer": false
+                }
+            ]
+        }
+    ]
+}

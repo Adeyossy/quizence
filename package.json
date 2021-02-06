@@ -1,0 +1,21 @@
+{
+  "name": "quizence",
+  "version": "1.0.0",
+  "description": "api for the answered questions",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "keywords": [
+    "quiz",
+    "answered",
+    "api",
+    "questions"
+  ],
+  "author": "Adeyosola Mustapha",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.16"
+  }
+}
