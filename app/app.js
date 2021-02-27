@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/:course', (req, res, next) => {
-    const CourseModel = mongoose.model(String(req.params.course), courseSchema, 'medicine');
+    const CourseModel = mongoose.model(String(req.params.course), courseSchema, String(req.params.course));
     CourseModel.find({}, (err, desiredCourse) => {
         if(err) {
           next();
