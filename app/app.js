@@ -23,21 +23,27 @@ mongoose.connect("mongodb+srv://Deyosse:Jimmeyjoe1997@quizence.hjjzf.mongodb.net
 const connectionStatus = mongoose.connection;
 connectionStatus.on('error', console.error.bind(console, 'connection: '));
 connectionStatus.once('open', () => {
-    console.log("we're connected to quizence database");
+    // console.log("we're connected to quizence database");
 });
 
 app.get('/', (req, res) => {
     res.send("<h2>Quizence is live</h2>");
 });
 
-app.get('/:course', (req, res) => {
+app.get('/:course', (req, res, next) => {
     const CourseModel = mongoose.model(String(req.params.course), courseSchema, 'medicine');
     CourseModel.find({}, (err, desiredCourse) => {
-        if(err) return console.err.bind(err);
+        if(err) {
+          next();
+        }
         console.log(desiredCourse);
          res.send(JSON.stringify(desiredCourse));
     });
 });
+
+app.get('/*', (req, res) => {
+  res.send(JSON.stringify([]));
+})
 
 app.listen(process.env.PORT || 8000, () => {
     if(!process.env.PORT) console.log("port 8000");
