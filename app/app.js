@@ -36,7 +36,7 @@ app.get('/:course', (req, res, next) => {
         if(err) {
           next();
         }
-        console.log(desiredCourse);
+        // console.log(desiredCourse);
          res.send(JSON.stringify(desiredCourse));
     });
 });
