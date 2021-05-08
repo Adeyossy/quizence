@@ -4,8 +4,10 @@ const mongoose = require('mongoose');
 
 const questionSchema = new mongoose.Schema({
     question: String,
-    options: [ { option: { type: String }, answer: Boolean } ]
+    options: [ { option: { type: String }, answer: Boolean, isAnswered: Boolean } ]
 });
+
+const questionCollationSchema = questionSchema.clone().add({collationid: 'objectId'});
 
 const courseSchema = new mongoose.Schema({
     year: Number,
@@ -13,6 +15,16 @@ const courseSchema = new mongoose.Schema({
     course: String,
     questions: [ questionSchema ]
 });
+
+const collationSchema = new mongoose.Schema({
+  posting: String,
+  subposting: String,
+  numberofquestions: String,
+  type: { type: String },
+  date: Number,
+  duration: Number,
+  questions: [ questionSchema ]
+})
 
 const courseModel = mongoose.model('Medicine', courseSchema);
 
@@ -26,10 +38,82 @@ connectionStatus.once('open', () => {
     // console.log("we're connected to quizence database");
 });
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 app.get('/', (req, res) => {
     res.send("<h2>Quizence is live</h2>");
 });
 
+app.post('/:course/collation', (req, res) => {
+  const course = String(req.params.course).concat("collation");
+  const collationDetails = req.body;
+  const CollationModel = mongoose.model(course, collationSchema);
+  const CollationDocument = new CollationModel({
+    posting: collationDetails.posting,
+    subposting: collationDetails.subposting,
+    numberofquestions: collationDetails.numberofquestions,
+    type: collationDetails.type,
+    date: collationDetails.date,
+    duration: collationDetails.duration,
+    questions: collationDetails.questions
+  });
+  
+  //save the created document
+  CollationDocument.save().then((savedDocument) => {
+    if(savedDocument === CollationDocument){
+      res.status(200).send("Collation Saved Successfully");
+    }
+  }).catch(() => {
+    res.status(500).send("Not saved");
+  });
+});
+
+app.get('/:course/collation', (req, res) => {
+  const course = String(req.params.course);
+  const course_collation = String(req.params.course).concat("collation");
+  // const question = req.body;
+  // const CourseModel = mongoose.model(course, courseSchema);
+  const CollationModel = mongoose.model(course_collation, collationSchema);
+  CollationModel.find({posting: course}, (err, foundCollations) => {
+    if(err) {
+      res.send(JSON.stringify([]));
+    }
+
+    res.send(JSON.stringify(foundCollations));
+  });
+});
+
+app.post('/:course/collation/:subposting', (req, res) => {
+  const course = String(req.params.course);
+  const course_collation = course.concat("collation");
+  const subposting = String(req.params.subposting);
+  subposting = subposting.replace(" ", "");
+  const sentQuestion = req.body;
+
+  const QuestionCollation = mongoose.model('questioncollation', questionCollationSchema);
+  const thisQuestion = new QuestionCollation({
+    question: sentQuestion.question,
+    option: sentQuestion.option,
+    collationid: sentQuestion.collationid
+  });
+
+  const CollationModel = mongoose.model(course_collation, collationSchema);
+  CollationModel.findByIdAndUpdate(collationid, { $push: {'questions': thisQuestion}}, 
+  (err, result) => {
+    if(err) res.sendStatus(500);
+    res.sendStatus(200);
+  });
+});
+/* 
+app.get('/:course/collation/:unique', (req, res) => {
+  const course = String(req.params.course);
+  const course_collation = course.concat("collation");
+  const unique = String(req.params.unique);
+
+  const QuestionCollation = mongoose.model('questioncollation')
+});
+ */
 app.get('/:course', (req, res, next) => {
     const CourseModel = mongoose.model(String(req.params.course), courseSchema, String(req.params.course));
     CourseModel.find({}, (err, desiredCourse) => {
@@ -43,7 +127,7 @@ app.get('/:course', (req, res, next) => {
 
 app.get('/*', (req, res) => {
   res.send(JSON.stringify([]));
-})
+});
 
 app.listen(process.env.PORT || 8000, () => {
     if(!process.env.PORT) console.log("port 8000");
