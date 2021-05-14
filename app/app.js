@@ -23,6 +23,8 @@ const collationSchema = new mongoose.Schema({
   type: { type: String },
   date: Number,
   duration: Number,
+  group: String,
+  set: String,
   questions: [ questionSchema ]
 })
 
@@ -48,7 +50,7 @@ app.get('/', (req, res) => {
 app.post('/:course/collation', (req, res) => {
   const course = String(req.params.course).concat("collation");
   const collationDetails = req.body;
-  const CollationModel = mongoose.model(course, collationSchema);
+  const CollationModel = mongoose.model(course, collationSchema, course);
   const CollationDocument = new CollationModel({
     posting: collationDetails.posting,
     subposting: collationDetails.subposting,
@@ -56,7 +58,9 @@ app.post('/:course/collation', (req, res) => {
     type: collationDetails.type,
     date: collationDetails.date,
     duration: collationDetails.duration,
-    questions: collationDetails.questions
+    questions: collationDetails.questions,
+    set: collationDetails.set,
+    group: collationDetails.group
   });
   
   //save the created document
@@ -74,7 +78,7 @@ app.get('/:course/collation', (req, res) => {
   const course_collation = String(req.params.course).concat("collation");
   // const question = req.body;
   // const CourseModel = mongoose.model(course, courseSchema);
-  const CollationModel = mongoose.model(course_collation, collationSchema);
+  const CollationModel = mongoose.model(course_collation, collationSchema, course_collation);
   CollationModel.find({posting: course}, (err, foundCollations) => {
     if(err) {
       res.send(JSON.stringify([]));
@@ -91,7 +95,8 @@ app.post('/:course/collation/:subposting', (req, res) => {
   subposting = subposting.replace(" ", "");
   const sentQuestion = req.body;
 
-  const QuestionCollation = mongoose.model('questioncollation', questionCollationSchema);
+  const QuestionCollation = mongoose.model('questioncollation', questionCollationSchema, 
+    'questionCollation');
   const thisQuestion = new QuestionCollation({
     question: sentQuestion.question,
     option: sentQuestion.option,
