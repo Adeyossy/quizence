@@ -53,7 +53,7 @@ app.post('/:course/collation', (req, res) => {
   const collationDetails = req.body;
   const CollationModel = mongoose.model(course, collationSchema, course);
   const CollationDocument = new CollationModel({
-    course: course,
+    course: collationDetails.course,
     posting: collationDetails.mPosting,
     subposting: collationDetails.mSubPosting,
     numberofquestions: collationDetails.mNumberOfQuestions,
