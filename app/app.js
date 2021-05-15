@@ -52,15 +52,15 @@ app.post('/:course/collation', (req, res) => {
   const collationDetails = req.body;
   const CollationModel = mongoose.model(course, collationSchema, course);
   const CollationDocument = new CollationModel({
-    posting: collationDetails.posting,
-    subposting: collationDetails.subposting,
-    numberofquestions: collationDetails.numberofquestions,
-    type: collationDetails.type,
-    date: collationDetails.date,
-    duration: collationDetails.duration,
-    questions: collationDetails.questions,
-    set: collationDetails.set,
-    group: collationDetails.group
+    posting: collationDetails.mPosting,
+    subposting: collationDetails.mSubposting,
+    numberofquestions: collationDetails.mNumberOfQuestions,
+    type: collationDetails.mQuestionType,
+    date: collationDetails.mCollationDate,
+    duration: collationDetails.mTestDuration,
+    questions: collationDetails.mQuestions,
+    set: collationDetails.mSet,
+    group: collationDetails.mGroup
   });
   
   //save the created document
