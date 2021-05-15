@@ -55,7 +55,7 @@ app.post('/:course/collation', (req, res) => {
   const CollationDocument = new CollationModel({
     course: course,
     posting: collationDetails.mPosting,
-    subposting: collationDetails.mSubposting,
+    subposting: collationDetails.mSubPosting,
     numberofquestions: collationDetails.mNumberOfQuestions,
     type: collationDetails.mQuestionType,
     date: collationDetails.mCollationDate,
