@@ -17,6 +17,7 @@ const courseSchema = new mongoose.Schema({
 });
 
 const collationSchema = new mongoose.Schema({
+  course: String,
   posting: String,
   subposting: String,
   numberofquestions: String,
@@ -52,6 +53,7 @@ app.post('/:course/collation', (req, res) => {
   const collationDetails = req.body;
   const CollationModel = mongoose.model(course, collationSchema, course);
   const CollationDocument = new CollationModel({
+    course: course,
     posting: collationDetails.mPosting,
     subposting: collationDetails.mSubposting,
     numberofquestions: collationDetails.mNumberOfQuestions,
@@ -79,12 +81,12 @@ app.get('/:course/collation', (req, res) => {
   // const question = req.body;
   // const CourseModel = mongoose.model(course, courseSchema);
   const CollationModel = mongoose.model(course_collation, collationSchema, course_collation);
-  CollationModel.find({posting: course}, (err, foundCollations) => {
+  CollationModel.find({course: course}, (err, foundCollations) => {
     if(err) {
-      res.send(JSON.stringify([]));
+      res.status(500).send(JSON.stringify(err));
     }
 
-    res.send(JSON.stringify(foundCollations));
+    res.status(200).send(JSON.stringify(foundCollations));
   });
 });
 
