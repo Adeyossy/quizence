@@ -108,7 +108,7 @@ app.post('/:course/collation/:subposting', (req, res) => {
   const CollationModel = mongoose.model(course_collation, collationSchema);
   CollationModel.findByIdAndUpdate(sentQuestion.mSourceID, {
     $push: {
-      'questions': {
+      questions: {
         _id: new mongoose.Types.ObjectId(),
         question: sentQuestion.mQuestionTitle,
         option: sentQuestion.mOptions,
@@ -116,8 +116,13 @@ app.post('/:course/collation/:subposting', (req, res) => {
       }
     }
   },
+  {
+    new: true
+  },
     (err, result) => {
       if (err) res.sendStatus(500);
+      console.log(req.body);
+      console.log(result.toString());
       res.sendStatus(200);
     });
 });
