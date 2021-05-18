@@ -106,7 +106,7 @@ app.post('/:course/collation/:subposting', (req, res) => {
   });
 
   const CollationModel = mongoose.model(course_collation, collationSchema);
-  CollationModel.findByIdAndUpdate(collationid, { $push: {'questions': thisQuestion}}, 
+  CollationModel.findByIdAndUpdate(sentQuestion.mSourceID, { $push: {'questions': thisQuestion}}, 
   (err, result) => {
     if(err) res.sendStatus(500);
     res.sendStatus(200);
