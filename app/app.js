@@ -7,7 +7,7 @@ const questionSchema = new mongoose.Schema({
   options: [{ option: { type: String }, answer: Boolean, isAnswered: Boolean }]
 });
 
-const questionCollationSchema = questionSchema.clone().add({ collationid: 'objectId' });
+const questionCollationSchema = questionSchema.clone().add({ collationid: 'string', _id: 'objectId' });
 
 const courseSchema = new mongoose.Schema({
   year: Number,
@@ -26,7 +26,7 @@ const collationSchema = new mongoose.Schema({
   duration: Number,
   group: String,
   set: String,
-  questions: [questionSchema]
+  questions: [questionCollationSchema]
 })
 
 const courseModel = mongoose.model('Medicine', courseSchema);
@@ -111,7 +111,11 @@ app.post('/:course/collation/:subposting', (req, res) => {
       questions: {
         _id: new mongoose.Types.ObjectId(),
         question: sentQuestion.mQuestionTitle,
-        option: sentQuestion.mOptions,
+        option: {
+          option: sentQuestion.mOptions.mOption,
+          answer: sentQuestion.mOptions.mIsAnswer,
+          isAnswered: sentQuestion.mOptions.mIsMarked
+        },
         collationid: sentQuestion.mSourceID
       }
     }
