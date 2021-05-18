@@ -111,7 +111,7 @@ app.post('/:course/collation/:subposting', (req, res) => {
       questions: {
         _id: new mongoose.Types.ObjectId(),
         question: sentQuestion.mQuestionTitle,
-        option: {
+        options: {
           option: sentQuestion.mOptions.mOption,
           answer: sentQuestion.mOptions.mIsAnswer,
           isAnswered: sentQuestion.mOptions.mIsMarked
