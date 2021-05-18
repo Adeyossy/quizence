@@ -3,17 +3,17 @@ const app = express();
 const mongoose = require('mongoose');
 
 const questionSchema = new mongoose.Schema({
-    question: String,
-    options: [ { option: { type: String }, answer: Boolean, isAnswered: Boolean } ]
+  question: String,
+  options: [{ option: { type: String }, answer: Boolean, isAnswered: Boolean }]
 });
 
-const questionCollationSchema = questionSchema.clone().add({collationid: 'objectId'});
+const questionCollationSchema = questionSchema.clone().add({ collationid: 'objectId' });
 
 const courseSchema = new mongoose.Schema({
-    year: Number,
-    type: { type: String },
-    course: String,
-    questions: [ questionSchema ]
+  year: Number,
+  type: { type: String },
+  course: String,
+  questions: [questionSchema]
 });
 
 const collationSchema = new mongoose.Schema({
@@ -26,26 +26,26 @@ const collationSchema = new mongoose.Schema({
   duration: Number,
   group: String,
   set: String,
-  questions: [ questionSchema ]
+  questions: [questionSchema]
 })
 
 const courseModel = mongoose.model('Medicine', courseSchema);
 
-mongoose.connect("mongodb+srv://Deyosse:Jimmeyjoe1997@quizence.hjjzf.mongodb.net/quizence?retryWrites=true&w=majority", { 
-    useNewUrlParser: true,
-    useUnifiedTopology: true
+mongoose.connect("mongodb+srv://Deyosse:Jimmeyjoe1997@quizence.hjjzf.mongodb.net/quizence?retryWrites=true&w=majority", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 });
 const connectionStatus = mongoose.connection;
 connectionStatus.on('error', console.error.bind(console, 'connection: '));
 connectionStatus.once('open', () => {
-    // console.log("we're connected to quizence database");
+  // console.log("we're connected to quizence database");
 });
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-    res.send("<h2>Quizence is live</h2>");
+  res.send("<h2>Quizence is live</h2>");
 });
 
 app.post('/:course/collation', (req, res) => {
@@ -64,10 +64,10 @@ app.post('/:course/collation', (req, res) => {
     set: collationDetails.mSet,
     group: collationDetails.mGroup
   });
-  
+
   //save the created document
   CollationDocument.save().then((savedDocument) => {
-    if(savedDocument === CollationDocument){
+    if (savedDocument === CollationDocument) {
       res.status(200).send("Collation Saved Successfully");
     }
   }).catch(() => {
@@ -81,8 +81,8 @@ app.get('/:course/collation', (req, res) => {
   // const question = req.body;
   // const CourseModel = mongoose.model(course, courseSchema);
   const CollationModel = mongoose.model(course_collation, collationSchema, course_collation);
-  CollationModel.find({course: course}, (err, foundCollations) => {
-    if(err) {
+  CollationModel.find({ course: course }, (err, foundCollations) => {
+    if (err) {
       res.status(500).send(JSON.stringify(err));
     }
 
@@ -97,7 +97,7 @@ app.post('/:course/collation/:subposting', (req, res) => {
   subposting = subposting.replace(" ", "");
   const sentQuestion = req.body;
 
-  const QuestionCollation = mongoose.model('questioncollation', questionCollationSchema, 
+  const QuestionCollation = mongoose.model('questioncollation', questionCollationSchema,
     'questionCollation');
   const thisQuestion = new QuestionCollation({
     question: sentQuestion.mQuestionTitle,
@@ -106,11 +106,20 @@ app.post('/:course/collation/:subposting', (req, res) => {
   });
 
   const CollationModel = mongoose.model(course_collation, collationSchema);
-  CollationModel.findByIdAndUpdate(sentQuestion.mSourceID, { $push: {'questions': thisQuestion}}, 
-  (err, result) => {
-    if(err) res.sendStatus(500);
-    res.sendStatus(200);
-  });
+  CollationModel.findByIdAndUpdate(sentQuestion.mSourceID, {
+    $push: {
+      'questions': {
+        _id: new mongoose.Types.ObjectId(),
+        question: sentQuestion.mQuestionTitle,
+        option: sentQuestion.mOptions,
+        collationid: sentQuestion.mSourceID
+      }
+    }
+  },
+    (err, result) => {
+      if (err) res.sendStatus(500);
+      res.sendStatus(200);
+    });
 });
 /* 
 app.get('/:course/collation/:unique', (req, res) => {
@@ -122,14 +131,14 @@ app.get('/:course/collation/:unique', (req, res) => {
 });
  */
 app.get('/:course', (req, res, next) => {
-    const CourseModel = mongoose.model(String(req.params.course), courseSchema, String(req.params.course));
-    CourseModel.find({}, (err, desiredCourse) => {
-        if(err) {
-          next();
-        }
-        // console.log(desiredCourse);
-         res.send(JSON.stringify(desiredCourse));
-    });
+  const CourseModel = mongoose.model(String(req.params.course), courseSchema, String(req.params.course));
+  CourseModel.find({}, (err, desiredCourse) => {
+    if (err) {
+      next();
+    }
+    // console.log(desiredCourse);
+    res.send(JSON.stringify(desiredCourse));
+  });
 });
 
 app.get('/*', (req, res) => {
@@ -137,5 +146,5 @@ app.get('/*', (req, res) => {
 });
 
 app.listen(process.env.PORT || 8000, () => {
-    if(!process.env.PORT) console.log("port 8000");
+  if (!process.env.PORT) console.log("port 8000");
 });
