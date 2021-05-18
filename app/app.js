@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 const questionSchema = new mongoose.Schema({
   question: String,
-  options: [{ option: { type: String }, answer: Boolean, isAnswered: Boolean }]
+  options: [{ option: { type: String }, answer: Boolean, isAnswered: Boolean, explanation: String }]
 });
 
 const questionCollationSchema = questionSchema.clone().add({ collationid: 'string', _id: 'objectId' });
@@ -111,18 +111,14 @@ app.post('/:course/collation/:subposting', (req, res) => {
       questions: {
         _id: new mongoose.Types.ObjectId(),
         question: sentQuestion.mQuestionTitle,
-        options: {
-          option: sentQuestion.mOptions.mOption,
-          answer: sentQuestion.mOptions.mIsAnswer,
-          isAnswered: sentQuestion.mOptions.mIsMarked
-        },
+        options: sentQuestion.mOptions,
         collationid: sentQuestion.mSourceID
       }
     }
   },
-  {
-    new: true
-  },
+    {
+      new: true
+    },
     (err, result) => {
       if (err) res.status(500).send("An error occured: " + err);
       console.log(req.body);
