@@ -93,16 +93,16 @@ app.get('/:course/collation', (req, res) => {
 app.post('/:course/collation/:subposting', (req, res) => {
   const course = String(req.params.course);
   const course_collation = course.concat("collation");
-  const subposting = String(req.params.subposting);
+  let subposting = String(req.params.subposting);
   subposting = subposting.replace(" ", "");
   const sentQuestion = req.body;
 
   const QuestionCollation = mongoose.model('questioncollation', questionCollationSchema, 
     'questionCollation');
   const thisQuestion = new QuestionCollation({
-    question: sentQuestion.question,
-    option: sentQuestion.option,
-    collationid: sentQuestion.collationid
+    question: sentQuestion.mQuestionTitle,
+    option: sentQuestion.mOptions,
+    collationid: sentQuestion.mSourceID
   });
 
   const CollationModel = mongoose.model(course_collation, collationSchema);
