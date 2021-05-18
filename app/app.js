@@ -120,9 +120,9 @@ app.post('/:course/collation/:subposting', (req, res) => {
     new: true
   },
     (err, result) => {
-      if (err) res.sendStatus(500);
+      if (err) res.status(500).send("An error occured: " + err);
       console.log(req.body);
-      console.log(result.toString());
+      console.log(result);
       res.sendStatus(200);
     });
 });
