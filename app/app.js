@@ -90,11 +90,11 @@ app.get('/:course/collation', (req, res) => {
   });
 });
 
-app.post('/:course/collation/:subposting', (req, res) => {
+app.post('/:course/collation/:unique', (req, res) => {
   const course = String(req.params.course);
   const course_collation = course.concat("collation");
-  let subposting = String(req.params.subposting);
-  subposting = subposting.replace(" ", "");
+  let unique = String(req.params.unique);
+  unique = unique.replace(" ", "");
   const sentQuestion = req.body;
 
   const QuestionCollation = mongoose.model('questioncollation', questionCollationSchema,
@@ -106,25 +106,42 @@ app.post('/:course/collation/:subposting', (req, res) => {
   });
 
   const CollationModel = mongoose.model(course_collation, collationSchema);
-  CollationModel.findByIdAndUpdate(sentQuestion.mSourceID, {
-    $push: {
-      questions: {
-        _id: new mongoose.Types.ObjectId(),
-        question: sentQuestion.mQuestionTitle,
-        options: sentQuestion.mOptions,
-        collationid: sentQuestion.mSourceID
-      }
+
+    if(unique === "unique"){
+      CollationModel.updateOne(
+        { _id: sentQuestion.mSourceID, "questions._id": sentQuestion.mId },
+        { $set: 
+          {
+            "questions.$.question": sentQuestion.mQuestionTitle,
+            "questions.$.options": sentQuestion.mOptions
+          } 
+        }, (err, result) => {
+          if (err) res.status(500).send("An error occured: " + err);
+          console.log(req.body);
+          console.log(result);
+          res.sendStatus(200);
+        }
+      );
+    } else {
+      CollationModel.findByIdAndUpdate(sentQuestion.mSourceID, {
+        $addToSet: {
+          questions: {
+            _id: new mongoose.Types.ObjectId(),
+            question: sentQuestion.mQuestionTitle,
+            options: sentQuestion.mOptions,
+            collationid: sentQuestion.mSourceID
+          }
+        }
+      },
+        {
+          new: true
+        }, (err, result) => {
+          if (err) res.status(500).send("An error occured: " + err);
+          console.log(req.body);
+          console.log(result);
+          res.sendStatus(200);
+        });
     }
-  },
-    {
-      new: true
-    },
-    (err, result) => {
-      if (err) res.status(500).send("An error occured: " + err);
-      console.log(req.body);
-      console.log(result);
-      res.sendStatus(200);
-    });
 });
 /* 
 app.get('/:course/collation/:unique', (req, res) => {
